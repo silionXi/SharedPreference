@@ -1,5 +1,6 @@
 package com.silion.sharedpreferencedemo;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     EditText mNameEditText;
     EditText mPassWordEditText;
     CheckBox mSaveCheckBox;

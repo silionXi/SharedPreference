@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.silion.sharedpreferencedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/user_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/userName"
+        android:ems="10"
+        android:hint="@string/input_name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/userPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUserName"
+        android:layout_toLeftOf="@+id/editUserName"
+        android:layout_toStartOf="@+id/editUserName"
+        android:text="@string/user_pw"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editUserPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editUserName"
+        android:layout_alignRight="@+id/editUserName"
+        android:layout_alignTop="@+id/userPassWord"
+        android:layout_toRightOf="@+id/userPassWord"
+        android:ems="10"
+        android:hint="@string/input_pw"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/saveCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editUserPassWord"
+        android:checked="false"
+        android:text="@string/save_name" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/saveCheckBox"
+        android:onClick="doClick"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/login"
+        android:layout_toEndOf="@+id/login"
+        android:layout_toRightOf="@+id/login"
+        android:onClick="doClick"
+        android:text="@string/cancel" />
+</RelativeLayout>

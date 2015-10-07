@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
             case R.id.login: {
                 String name = mNameEditText.getText().toString();
                 String passWord = mPassWordEditText.getText().toString().trim();
-                if (name.equals("silion") && passWord.equals("123456")) {
+                if (name.equals("silion") && passWord.equals("880317")) {
                     if (mSaveCheckBox.isChecked()) {
                         editor.putString("name", name);
                         editor.putBoolean("save", true);
